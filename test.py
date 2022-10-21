@@ -6,7 +6,20 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(service=Service('/usr/bin/chromedriver'),
                           options=chrome_options)
-driver.get('https://www.google.com/')
-get_title = driver.title
-print(get_title)
+def clich(chemin):
+    
+    try:
+    
+        driver.find_element(By.XPATH,chemin).click()
+    except:
+        
+        driver.save_screenshot("/home/ec2-user/captures/error.png")
+        
+        
+driver.get('https://www.sfr.fr/')
+time.sleep(2)
+clich("//div[@id='CkC']/div/a[2]")
+element=driver.find_element(By.LINK_TEXT,"Forfaits et Téléphones")
+driver.save_screenshot("/home/ec2-user/captures/pantt.png")
+
 driver.quit()
