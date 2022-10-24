@@ -19,9 +19,9 @@ def clich(chemin):
         
         
 driver.get('https://www.sfr.fr/')
-time.sleep(2)
-clich("//div[@id='CkC']/div/a[2]")
+time.sleep(8)
+#clich("//div[@id='CkC']/div/a[2]")
 #element=driver.find_element(By.LINK_TEXT,"Forfaits et Téléphones")
-driver.save_screenshot("/home/ec2-user/captures/pantt.png")
+driver.save_screenshot("/home/ec2-user/test/test/pantt.png")
 
 driver.quit()
