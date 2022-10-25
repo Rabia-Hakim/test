@@ -12,7 +12,7 @@ googleChrome = webdriver.Chrome(service=Service('/usr/bin/chromedriver'),
 
 pageUrl = "https://www.sfr.fr";
 googleChrome.get(pageUrl)
-element=googleChrome.find_element(By.LINK_TEXT,"Forfaits et Téléphones")
-element.click()
+#element=googleChrome.find_element(By.LINK_TEXT,"Forfaits et Téléphones")
+#element.click()
 googleChrome.save_screenshot("/home/ec2-user/test/test/capture.png")
 googleChrome.close()
