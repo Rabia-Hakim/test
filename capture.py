@@ -12,5 +12,5 @@ googleChrome = webdriver.Chrome(service=Service('/usr/bin/chromedriver'),
 
 pageUrl = "https://www.w3schools.com";
 googleChrome.get(pageUrl)
-googleChrome.save_screenshot("/home/ec2-user/test/test")
+googleChrome.save_screenshot("/home/ec2-user/test/test/capture.png")
 googleChrome.close()
