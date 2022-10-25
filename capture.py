@@ -15,6 +15,6 @@ pageUrl = "https://www.amazon.com/";
 googleChrome.get(pageUrl)
 #element=googleChrome.find_element(By.LINK_TEXT,"Forfaits et Téléphones")
 #element.click()
-time.sleep(30)
+#time.sleep(30)
 googleChrome.save_screenshot("/home/ec2-user/test/test/capture.png")
 googleChrome.close()
