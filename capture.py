@@ -8,7 +8,7 @@ googleChromeOptions.add_argument("--headless")
 googleChromeOptions.headless = True
 googleChromeOptions.add_argument('--window-size=1280,720')
 driver = webdriver.Chrome(service=Service('/usr/bin/chromedriver'),
-                          options=chrome_options)
+                          options=googleChromeOptions)
 
 pageUrl = "https://www.w3schools.com";
 googleChrome.get(pageUrl)
