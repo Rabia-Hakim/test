@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 
 googleChromeOptions = Options()
 googleChromeOptions.add_argument("--headless")
+googleChromeOptions.add_argument('--ignore-certificate-errors')
 googleChromeOptions.headless = True
 googleChromeOptions.add_argument('--window-size=1280,720')
 googleChrome = webdriver.Chrome(service=Service('/usr/bin/chromedriver'),
