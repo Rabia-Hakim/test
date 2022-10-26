@@ -12,7 +12,7 @@ googleChromeOptions.add_argument('--window-size=1280,720')
 googleChrome = webdriver.Chrome(service=Service('/usr/bin/chromedriver'),
                           options=googleChromeOptions)
 
-pageUrl = "https://www.sfr.fr";
+pageUrl = "http://www.ooredoo.dz/Ooredoo/Algerie/particuliers"
 googleChrome.get(pageUrl)
 #element=googleChrome.find_element(By.LINK_TEXT,"Forfaits et Téléphones")
 #element.click()
